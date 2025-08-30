@@ -1,0 +1,123 @@
+/* Dropdown styles for each button */
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  position: static;
+  background: #fff;
+  min-width: 212px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: max-height 0.20s cubic-bezier(0.4,0,0.2,1);
+}
+
+.dropdown:hover .dropdown-menu {
+  max-height: 500px;
+  display: block;
+  /* The display: block is for compatibility, but max-height animates the expansion */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: #2464E8;
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.dropdown-menu li a:hover {
+  background: #f0f4fa;
+}
+
+.left-nav {
+  width: 264px;;
+  
+  min-height: 100vh;
+  padding: 32px 0 24px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 16px rgba(20, 30, 60, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 10;
+}
+
+.left-nav ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+  width: 100%;
+}
+
+.left-nav li {
+  width: 212;
+height: 53;
+gap: 8px;
+color: #2464E8;
+opacity: 1;
+padding-top: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+padding-left: 24px;
+border-radius: 8px;
+
+}
+
+
+.left-nav a {
+  text-decoration: none;
+  
+  font-size: 1.08rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  padding: 12px 28px 12px 48px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 0 0 8px;
+  transition: background 0.18s, color 0.18s;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+
+
+/* Optional: Add icon placeholder styling */
+.left-nav .nav-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+  color: #4fd1c5;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Optional: Add logo area styling */
+.left-nav .nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+  color: #4fd1c5;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
