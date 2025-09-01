@@ -48,6 +48,20 @@ const cardData: CardProps[] = [
       { label: 'Inactive', value: 2 },
     ],
   },
+  {
+    title: 'Orders 1',
+    rows: [
+      { label: 'Pending', value: 4 },
+      { label: 'Completed', value: 12 },
+    ],
+  },
+  {
+    title: 'Orders 2',
+    rows: [
+      { label: 'Open', value: 7 },
+      { label: 'Closed', value: 15 },
+    ],
+  },
 ];
 
 const DashboardCards: React.FC = () => (
