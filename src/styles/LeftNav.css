@@ -1,3 +1,79 @@
+/* Generic icon styling for all sidebar icons */
+.left-nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Logo image styling */
+.nav-logo-img {
+  width: 218px;
+  height: 47.3913px;
+  opacity: 1;
+  position: relative;
+  left: 0;
+  margin-bottom: 4px;
+  
+}
+
+/* Dashboard link wrapper */
+.dashboard-link-wrapper {
+  margin-bottom: 16px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-link {
+  color: #474546;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 212px;
+}
+
+.dashboard-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Sidebar button styling */
+.left-nav-btn {
+  width: 212px;
+  height: 53px;
+  opacity: 1;
+  border-radius: 8px;
+  gap: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  background: #2464E8;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s;
+  margin-bottom: 8px;
+}
+
+.left-nav-btn-label {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 /* Dropdown styles for each button */
 .dropdown {
   position: relative;
@@ -6,6 +82,7 @@
 
 .dropdown-menu {
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
   position: static;
   background: #fff;
@@ -16,7 +93,17 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  transition: max-height 0.20s cubic-bezier(0.4,0,0.2,1);
+  transition: max-height 1s cubic-bezier(0.4,0,0.2,1), opacity 1s cubic-bezier(0.4,0,0.2,1);
+}
+
+.dropdown:hover .dropdown-menu {
+  max-height: 500px;
+  opacity: 1;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -34,12 +121,19 @@
 }
 
 .dropdown-menu li a {
-  color: #2464E8;
+  color: #474546;
   padding: 8px 16px;
   display: block;
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.15s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-transform: capitalize;
 }
 .dropdown-menu li a:hover {
   background: #f0f4fa;
@@ -49,7 +143,7 @@
   width: 264px;;
   
   min-height: 100vh;
-  padding: 32px 0 24px 0;
+  padding: 16px 0  0;
   position: fixed;
   left: 0;
   top: 0;

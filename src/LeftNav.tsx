@@ -1,5 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 import HireDeskLogo from './images/HireDeskLogo.png';
+import BackhoeIcon from './Icons/BackhoeIcon';
+import ServiceDeskIcon from './Icons/ServiceDeskIcon';
+import StoreDeskIcon from './Icons/StoreDeskIcon';
+import DashboardIcon from './Icons/DashBoardIcon';
 
 const navLinks = [
   { name: 'HireDesk', path: 'dashboard' },
@@ -21,47 +25,36 @@ const LeftNav: React.FC = () => {
         <img
           src={HireDeskLogo}
           alt="HireDesk Logo"
-          style={{
-            width: 218,
-            height: 47.3913,
-            opacity: 1,
-            position: 'relative',
-            
-            left: 0,
-            marginBottom: 8,
-            
-          }}
+          className="nav-logo-img"
         />
+      </div>
+      <div className="dashboard-link-wrapper">
+        <Link to={`${base}/dashboard`} className="dashboard-link">
+          <DashboardIcon className="dashboard-link-icon" />
+          DashBoard
+        </Link>
       </div>
       <ul>
         {navLinks.map(link => (
           <li key={link.name} className="dropdown">
-            <button
-              style={{
-                width: 212,
-                height: 53,
-                opacity: 1,
-                borderRadius: 8,
-                gap: 8,
-                paddingTop: 8,
-                paddingRight: 8,
-                paddingBottom: 8,
-                paddingLeft: 24,
-                display: 'flex',
-                alignItems: 'center',
-                background: '#2464E8',
-                border: 'none',
-                cursor: 'pointer',
-                transition: 'background 0.18s',
-              }}
-            >
-              <span style={{ color: '#fff', fontSize: 16 }}>{link.name}</span>
+            <button className="left-nav-btn">
+              {link.name === 'Store Desk' ? (
+                <StoreDeskIcon className="left-nav-icon" />
+              ) : link.name === 'Service Desk' ? (
+                <ServiceDeskIcon className="left-nav-icon" />
+              ) : (
+                <BackhoeIcon className="left-nav-icon" />
+              )} 
+              <span className="left-nav-btn-label">{link.name}</span>
             </button>
             <ul className="dropdown-menu">
               {(link.name === 'HireDesk') && [
-                <li key="option1"><Link to={`${base}/dashboard/overview`}>Overview</Link></li>,
-                <li key="option2"><Link to={`${base}/dashboard/settings`}>Settings</Link></li>,
-                <li key="option3"><Link to={`${base}/dashboard/profile`}>Profile</Link></li>,
+                <li key="option1"><Link to={`${base}/dashboard/asset-list`}>Asset List</Link></li>,
+                <li key="option2"><Link to={`${base}/dashboard/asset-management`}>Asset Management</Link></li>,
+                <li key="option3"><Link to={`${base}/dashboard/asset-renewal-reminders`}>Asset Reminders</Link></li>,
+                <li key="option4"><Link to={`${base}/dashboard/employee-documents`}>Employee Documents</Link></li>,
+                <li key="option5"><Link to={`${base}/dashboard/contacts`}>Contacts</Link></li>,
+                <li key="option6"><Link to={`${base}/dashboard/documents`}>Documents</Link></li>,
               ]}
               {(link.name === 'Service Desk') && [
                 <li key="option1"><Link to={`${base}/assets/list`}>Asset List</Link></li>,
