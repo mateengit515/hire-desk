@@ -31,7 +31,7 @@ const LeftNav: React.FC = () => {
       <div className="dashboard-link-wrapper">
         <Link to={`${base}/dashboard`} className="dashboard-link">
           <DashboardIcon className="dashboard-link-icon" />
-          DashBoard
+          Dashboard
         </Link>
       </div>
       <ul>

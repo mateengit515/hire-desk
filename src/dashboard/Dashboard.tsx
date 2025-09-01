@@ -1,9 +1,12 @@
 import React from 'react';
+import DashboardCards from './DashboardCards';
+
 
 const Dashboard: React.FC = () => (
   <div>
-    <h2>Dashboard</h2>
-    <p>This is the dashboard page.</p>
+  <h2 className="dashboard-title">Dashboard</h2>
+  <hr className="dashboard-separator" />
+  <DashboardCards />
   </div>
 );
 
