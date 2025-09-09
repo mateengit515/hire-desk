@@ -1,6 +1,5 @@
 import { Table } from '@aws-amplify/ui-react';
 import "./InventoryTable.css"
-import React from 'react';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
