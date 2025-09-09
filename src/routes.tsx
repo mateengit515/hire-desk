@@ -4,6 +4,7 @@ import HyderabadDepot from "./HyderabadDepot";
 import Dashboard from "./dashboard/Dashboard";
 import Assets from "./assets/Assets";
 import Issues from "./issues/Issues";
+import AssetList from "./components/AssetsList/AssetList";
 
 
 const AppRoutes = [
@@ -14,7 +15,7 @@ const AppRoutes = [
     <Route path="dashboard" element={<Dashboard />} />
     <Route path="assets" element={<Assets />} />
     <Route path="issues" element={<Issues />} />
-   
+    <Route path="dashboard/asset-list" element={<AssetList />} />
   </Route>,
   <Route path="/kolkata" element={<HyderabadDepot />} key="kolkata" />,
   <Route path="/houston" element={<HyderabadDepot />} key="houston" />,
