@@ -24,7 +24,7 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
 
-amplify_outputs.json - fileName :
+amplify_outputs.json:
 {
   "auth": {
     "user_pool_id": "us-east-1_GTHstQKcn",
