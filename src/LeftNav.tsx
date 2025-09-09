@@ -57,7 +57,7 @@ const LeftNav: React.FC = () => {
                 <li key="option6"><Link to={`${base}/dashboard/documents`}>Documents</Link></li>,
               ]}
               {(link.name === 'Service Desk') && [
-                <li key="option1"><Link to={`${base}/assets/list`}>Asset List</Link></li>,
+                <li key="option1"><Link to={`${base}/dashboard/asset-list`}>Asset List</Link></li>,
                 <li key="option2"><Link to={`${base}/assets/maintenance`}>Maintenance</Link></li>,
                 <li key="option3"><Link to={`${base}/assets/reports`}>Reports</Link></li>,
               ]}
