@@ -20,6 +20,42 @@
         },
         {
             "asset-number": 3,
+            "asset-description": "Sheera rane",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 4,
+            "asset-description": "kira Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 5,
+            "asset-description": "Sheera Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 6,
+            "asset-description": "Sheera Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 7,
             "asset-description": "Sheera Maine",
             "sub-category": "1.69m",
             "status": "On Hired",
