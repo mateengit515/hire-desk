@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  {  useState } from 'react';
 import downArrow from '../../images/down-arrow.png';
 import FilterOptions from './FilterOptions';
 

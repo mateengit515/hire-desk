@@ -4,7 +4,7 @@ import HyderabadDepot from "./HyderabadDepot";
 import Dashboard from "./dashboard/Dashboard";
 import Assets from "./assets/Assets";
 import Issues from "./issues/Issues";
-import AssetList from "./components/assetsList/AssetList";
+import AssetList from "./components/AssetsList/AssetList";
 
 
 const AppRoutes = [

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./AssetList.css";
 import SearchBar from '../searchBar/SearchBar';
-import InventoryTable from '../inventoryTable/InventoryTable';
+import InventoryTable from '../InventoryTable/InventoryTable'
 import FilterComponent from '../filter/FilterComponent';
 import axios from 'axios';
 import { toCamelCase } from '../../helpers/utils';

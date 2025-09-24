@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./FilterComponent.css";
 import SelectIem from '../searchBar/SelectIem';
 
