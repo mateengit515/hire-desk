@@ -1,7 +1,14 @@
 .search-bar{
     padding: 12px 10px;
     outline: none;
-    margin-left: 30px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.select-item{
+    padding: 12px 10px;
+    width: 250px;
+    outline: none;
     display: flex;
     border-radius: 5px;
 }
