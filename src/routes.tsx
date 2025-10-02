@@ -4,6 +4,8 @@ import HyderabadDepot from "./HyderabadDepot";
 import Dashboard from "./dashboard/Dashboard";
 import Assets from "./assets/Assets";
 import Issues from "./issues/Issues";
+import AssetAssignment from "./asset-assignment/AssetAssignment";
+
 
 
 const AppRoutes = [
@@ -13,6 +15,14 @@ const AppRoutes = [
     <Route index element={<Dashboard />} />
     <Route path="dashboard" element={<Dashboard />} />
     <Route path="assets" element={<Assets />} />
+    <Route path="dashboard/asset-list" element={<Assets />} />
+     <Route path="dashboard/asset-assignment" element={<AssetAssignment/>} />
+
+
+
+
+    
+
     <Route path="issues" element={<Issues />} />
    
   </Route>,

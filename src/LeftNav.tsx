@@ -50,7 +50,7 @@ const LeftNav: React.FC = () => {
             <ul className="dropdown-menu">
               {(link.name === 'HireDesk') && [
                 <li key="option1"><Link to={`${base}/dashboard/asset-list`}>Asset List</Link></li>,
-                <li key="option2"><Link to={`${base}/dashboard/asset-management`}>Asset Management</Link></li>,
+                <li key="option2"><Link to={`${base}/dashboard/asset-assignment`}>Asset Assignment</Link></li>,
                 <li key="option3"><Link to={`${base}/dashboard/asset-renewal-reminders`}>Asset Reminders</Link></li>,
                 <li key="option4"><Link to={`${base}/dashboard/employee-documents`}>Employee Documents</Link></li>,
                 <li key="option5"><Link to={`${base}/dashboard/contacts`}>Contacts</Link></li>,

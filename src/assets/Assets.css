@@ -1,0 +1,477 @@
+/* =============================
+   PAGE CONTAINER
+============================= */
+.assets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 1123px;
+  background: #fff;
+  padding: 16px;          /* keep for overall page padding */
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* =============================
+   HEADER (Title + Add Button)
+============================= */
+.assets-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    /* center vertically */
+  width: 1123px;          /* from design */
+  height: 84px;           /* from design */
+  padding: 14px;          /* from design */
+  border-radius: 10px;    /* from design */
+  background: #fff;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.assets-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;       /* Semi Bold */
+  font-size: 24px;        /* from design */
+  line-height: 28px;      /* from design */
+  letter-spacing: 0;
+  margin: 0;
+  color: #1f2937;
+}
+
+.assets-sub {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+/* Add Asset Button */
+.add-asset-btn {
+  width: 120px;           /* from design */
+  height: 40px;           /* from design */
+  opacity: 1;
+  transform: rotate(0deg);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 6px 12px;      /* from design */
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;       /* Medium */
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em; /* 2% tracking */
+}
+
+/* =============================
+   FILTERS
+============================= */
+.asset-filters {
+  width: 1103px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 8px;
+  opacity: 1;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.asset-filters-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+/* Search Input */
+.asset-search-input {
+  width: 189px;           /* from design */
+  height: 32px;           /* from design */
+  padding: 6px 12px;
+  border-radius: 6px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+
+  border: 1px solid #e5e7eb;
+  background: #fafafa;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #374151;
+}
+
+.asset-search-input::placeholder {
+  color: #A1A9B8;
+}
+
+/* Asset Type chip (next to search) */
+.asset-type {
+  width: 97px;
+  height: 20px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #374151;
+
+  background: #f8f9fb;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+/* Asset Status chip (if needed) */
+.asset-status {
+  width: 86px;
+  height: 20px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #374151;
+
+  background: #f8f9fb;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+/* Filter Buttons */
+.filter-buttons { display:flex; gap:8px; }
+.filter-btn {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  background: #f8f9fb;
+  cursor: pointer;
+}
+
+/* =============================
+   TABLE
+============================= */
+.asset-table {
+  width: 1124px;              /* from design */
+  height: 591px;              /* from design */
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;           /* horizontal scroll */
+  overflow-y: auto;           /* vertical scroll */
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+}
+
+.asset-table table {
+  width: max-content;         /* allow horizontal scroll */
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: auto;
+  white-space: nowrap;
+}
+
+/* Cells */
+.asset-table th,
+.asset-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eef2f7;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Sticky Header */
+.asset-table th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  color: #374151;
+  font-weight: 700;
+}
+
+/* Row Interactions */
+.asset-table tbody tr {
+  transition: background 0.2s ease;
+}
+.asset-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Asset Number column */
+.col-asset-number {
+  width: 157px;               /* from design */
+  height: 623px;              /* from design */
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: left;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Asset Description column */
+.col-asset-description {
+  width: 260px;
+  height: 623px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: left;
+  border-right: 1px solid #e5e7eb; /* from design */
+}
+
+/* Subcategory column */
+.col-subcategory {
+  width: 186px;
+  height: 622px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: left;
+  border-right: 1px solid #e5e7eb; /* from design */
+}
+
+/* Status column */
+.col-status {
+  width: 211px;
+  height: 623px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: center; /* badges usually centered */
+}
+
+/* Capacity column */
+.col-capacity {
+  width: 118px;
+  height: 623px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: right;
+}
+
+/* Capacity Units column */
+.col-capacity-units {
+  width: 158px;
+  height: 623px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Location column */
+.col-location {
+  width: 171px;
+  height: 622px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+/* Asset Link */
+.asset-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;       /* Semi Bold */
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #0ea5e9;
+  cursor: pointer;
+}
+.asset-link:hover {
+  text-decoration: underline;
+}
+
+/* =============================
+   STATUS BADGES
+============================= */
+.status-badge {
+  width: 173px;                /* from design */
+  height: 30px;                /* from design */
+  border-radius: 4px;
+  padding: 2px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  color: #000; /* default text color */
+}
+
+/* Color Variants */
+.status-available { background: #4FC3F7; }
+.status-inspection { background: #FFCA28; }
+.status-hired { background: #09EF12; }
+.status-offhired { background: #B0BEC5; }
+.status-ready { background: #26A69A; }
+.status-post { background: #FF9800; }
+.status-under { background: #FFC107; }
+.status-breakdown { background: #F44336; }
+.status-wip { background: #F8D05A; }
+.status-temp { background: #00BCD4; }
+.status-disposal { background: #B71C1C; }
+
+.status-select { display:inline-flex; align-items:center; gap:8px; }
+.status-select select, .status-select .status-dropdown {
+  border-radius: 6px;
+}
+
+/* =============================
+   ACTION BUTTONS
+============================= */
+.action-btn {
+  padding: 6px 8px;
+  margin-right: 6px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+.action-btn:hover {
+  background: #f3f4f6;
+}
+.action-btn.danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.action-btn.danger:hover {
+  background: #fca5a5;
+  color: #7f1d1d;
+}
+
+/* =============================
+   FOOTER + PAGINATION
+============================= */
+.assets-footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top: 12px;
+  color: #6b7280;
+}
+
+.assets-footer-right {
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.pagination-controls button {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  cursor: pointer;
+}
+.page-indicator {
+  padding: 4px 8px;
+  background:#f3f4f6;
+  border-radius:6px;
+}
+
+/* =============================
+   MODAL (Add/Edit)
+============================= */
+.modal-backdrop {
+  position: fixed;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal {
+  width: 720px;
+  max-width: 95%;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+  margin-top:8px;
+}
+.form-grid label {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:13px;
+  color:#374151;
+}
+.form-grid input {
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+}
+
+.modal-actions {
+  margin-top:14px;
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+.btn {
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  background:#fff;
+  cursor:pointer;
+}
+.btn.primary {
+  background:#2563eb;
+  color:#fff;
+  border:none;
+}
