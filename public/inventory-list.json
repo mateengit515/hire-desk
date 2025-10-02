@@ -1,0 +1,67 @@
+{
+    "list": [
+        {
+            "asset-number": 1,
+            "asset-description": "John Doe",
+            "sub-category": "1.75m",
+            "status": "Available",
+            "capacity": "10",
+            "capacity-unit": "Tons",
+            "location": "Hyderabad"
+        },
+        {
+            "asset-number": 2,
+            "asset-description": "Jane Doe",
+            "sub-category": "1.64m",
+            "status": "Pre-Delivery Inspection",
+            "capacity": "160",
+            "capacity-unit": "kw",
+            "location": "Noida"
+        },
+        {
+            "asset-number": 3,
+            "asset-description": "Sheera rane",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 4,
+            "asset-description": "kira Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 5,
+            "asset-description": "Sheera Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 6,
+            "asset-description": "Sheera Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        },
+         {
+            "asset-number": 7,
+            "asset-description": "Sheera Maine",
+            "sub-category": "1.69m",
+            "status": "On Hired",
+            "capacity": "5",
+            "capacity-unit": "Cubic Meter",
+            "location": "Delhi"
+        }
+    ]
+}

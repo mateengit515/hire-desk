@@ -24,7 +24,7 @@ const AppRoutes = [
     
 
     <Route path="issues" element={<Issues />} />
-   
+    <Route path="dashboard/asset-list" element={<AssetList />} />
   </Route>,
   <Route path="/kolkata" element={<HyderabadDepot />} key="kolkata" />,
   <Route path="/houston" element={<HyderabadDepot />} key="houston" />,
