@@ -1,23 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-const AssetFilters: React.FC = () => {
-  const [query, setQuery] = useState("");
+interface AssetFiltersProps {
+  query: string;
+  setQuery: (q: string) => void;
+}
 
+const AssetFilters: React.FC<AssetFiltersProps> = ({ query, setQuery }) => {
   return (
     <div className="asset-filters">
       <input
         type="text"
-        placeholder="Search assets..."
         value={query}
+        placeholder="Search assets..."
         onChange={(e) => setQuery(e.target.value)}
-        className="asset-search-input"
       />
-      <div className="filter-buttons">
-        <button className="filter-btn">Asset Type ▼</button>
-        <button className="filter-btn">Asset Group ▼</button>
-        <button className="filter-btn">Asset Status ▼</button>
-        <button className="filter-btn">⚙ Filter</button>
-      </div>
     </div>
   );
 };
