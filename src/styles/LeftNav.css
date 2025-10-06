@@ -141,7 +141,7 @@
 
 .left-nav {
   width: 264px;;
-  
+  background: white;
   min-height: 100vh;
   padding: 16px 0 4px 0;
   position: fixed;
