@@ -1,9 +1,9 @@
 .dashboard-separator {
   border: none;
-  border-top: 2px solid #e0e4ea;
+  border-top: 1px solid #e0e4ea;
   margin: 16px 0 32px 0;
   width: 100%;
-  margin-left: 12px;
+  margin-left: 20px;
 }
 .dashboard-title {
   text-align: left;
