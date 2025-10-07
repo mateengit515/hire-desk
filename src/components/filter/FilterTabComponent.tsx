@@ -1,4 +1,3 @@
-import React from 'react';
 import "./FilterTabComponent.css";
 import crossIcon from '../../images/cross-icon.png';
 import filterIcon from '../../images/filter-icon.png';
