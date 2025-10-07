@@ -1,11 +1,20 @@
 .asset-list-sub-title {
   text-align: left;
   margin-left: 30px;
+  font-size: medium;
+  font-family: math;
+  display: flex;
+  margin: 10px 0px 30px 30px;
+  color: grey;
 }
 
 .asset-list-title {
+  font-size: x-large;
+  font-weight: bold;
   text-align: left;
-  margin-left: 30px;
+  margin: 10px 0px 0px 30px;
+  font-family: sans-serif;
+  display: flex;
 }
 
 .filter-search-container {

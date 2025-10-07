@@ -49,8 +49,8 @@ const AssetList: React.FC = () => {
 
   return (
     <div>
-      <h2 className="asset-list-title">Assets</h2>
-      <h3 className='asset-list-sub-title'>Manage your equipment rental inventory</h3>
+      <span className="asset-list-title">Assets</span>
+      <span className='asset-list-sub-title'>Manage your equipment rental inventory</span>
       <hr className="dashboard-separator" />
       <div className='filter-search-container'>
         <SearchBar query={query} setQuery={setQuery} />

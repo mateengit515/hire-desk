@@ -39,11 +39,11 @@ function InventoryTable({ query, filterQuery, inventoryList, selectedColumns }: 
                 <tbody>
                     {Object.keys(filteredItems).length > 0 && filteredItems.list && filteredItems.list.map((val: any, i: number): any => {
                         return <tr key={i}>
-                            <td className="table-cell">{val["asset-number"]}</td>
+                            <td className="table-cell asset-number">{val["asset-number"]}</td>
                             <td className="table-cell">{val["asset-description"]}</td>
                             <td className="table-cell">{val["sub-category"]}</td>
                             <td className="table-cell">
-                                <Dropdown controlClassName='dropdown-cell' options={statusOptions} onChange={() => { }} value={val.status}></Dropdown>
+                                <Dropdown controlClassName='dropdown-cell' disabled={true} options={statusOptions} onChange={() => { }} value={val.status}></Dropdown>
                             </td>
                             <td className="table-cell">{val.capacity}</td>
                             <td className="table-cell">{val["capacity-unit"]}</td>

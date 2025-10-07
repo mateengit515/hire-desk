@@ -6,7 +6,7 @@
 
 .selector-separator {
     background: lightgrey;
-    height: 2px;
+    height: 1px;
     margin: 16px 0 16px 0;
     width: 100%;
 }
@@ -14,6 +14,7 @@
 .filter-option {
     font-weight: 200;
     margin: 0px 0px 0px 20px;
+    font-family: math;
 }
 
 .filter-box {
@@ -28,6 +29,11 @@
     text-align: left;
     max-height: -webkit-fill-available;
     overflow: auto;
+}
+ 
+.filter-tab {
+    font-weight: 200;
+    margin: -7px 0px 0px 18px;
 }
 
 .button-container {
@@ -63,7 +69,13 @@
 }
 
 .down-arrow-img {
-    height: 12px;
+    height: 11px;
     width: 15px;
+    margin-left: 5px;
+}
+
+.filter-icon-img {
+    height: 16px;
+    width: 16px;
     margin-left: 5px;
 }

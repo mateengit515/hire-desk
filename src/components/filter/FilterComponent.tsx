@@ -1,10 +1,13 @@
 import  {  useState } from 'react';
 import downArrow from '../../images/down-arrow.png';
+import filterIcon from '../../images/filter-icon.png';
 import FilterOptions from './FilterOptions';
+import FilterTabComponent from './FilterTabComponent';
 
 
 function FilterComponent({ filterOptions, setFilterQuery, filterQuery }: any) {
     const [openDivIndex, setOpenDivIndex] = useState(null as number | null);
+    const [openFilterTab, setOpenFilterTab] = useState(false);
 
     const handleToggle = (index: number) => {
         setOpenDivIndex(index === openDivIndex ? null : index);
@@ -26,7 +29,19 @@ function FilterComponent({ filterOptions, setFilterQuery, filterQuery }: any) {
                     }} />)}
                 </div>
             })}
-    </div>)
-}
+            <div className='filter-tab' onClick={(e) => {
+                e.stopPropagation();
+                setOpenFilterTab(!openFilterTab);
+            }}>
+            Filter
+             <img
+                        src={filterIcon}
+                        alt="HireDesk Logo"
+                        className="filter-icon-img"
+                    />
+            </div>
+            {openFilterTab && (<FilterTabComponent handleClose={() => setOpenFilterTab(false)} openFilterTab={openFilterTab} filters={filterOptions}/>)}
+            </div>
+)}
 
 export default FilterComponent;
