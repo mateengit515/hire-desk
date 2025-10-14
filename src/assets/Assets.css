@@ -345,17 +345,17 @@
 }
 
 /* Color Variants */
-.status-available { background: #4FC3F7; }
-.status-inspection { background: #FFCA28; }
-.status-hired { background: #09EF12; }
-.status-offhired { background: #B0BEC5; }
-.status-ready { background: #26A69A; }
-.status-post { background: #FF9800; }
-.status-under { background: #FFC107; }
-.status-breakdown { background: #F44336; }
-.status-wip { background: #F8D05A; }
-.status-temp { background: #00BCD4; }
-.status-disposal { background: #B71C1C; }
+.status-available { background: #FFFFFF; }
+.status-inspection { background: #FFFFFF; }
+.status-hired { background: #FFFFFF; }
+.status-offhired { background: #FFFFFF; }
+.status-ready { background: #FFFFFF#FFFFFF; }
+.status-post { background: #FFFFFF; }
+.status-under { background: #FFFFFF; }
+.status-breakdown { background: #FFFFFF; }
+.status-wip { background: #FFFFFF; }
+.status-temp { background: #FFFFFF; }
+.status-disposal { background: #FFFFFF; }
 
 .status-select { display:inline-flex; align-items:center; gap:8px; }
 .status-select select, .status-select .status-dropdown {

@@ -5,6 +5,7 @@ import Dashboard from "./dashboard/Dashboard";
 import Assets from "./assets/Assets";
 import Issues from "./issues/Issues";
 import AssetAssignment from "./asset-assignment/AssetAssignment";
+import ServiceDeskAssetAssignment from "./components/AssetAssignment/AssetAssignment";
 
 
 
@@ -17,9 +18,7 @@ const AppRoutes = [
     <Route path="assets" element={<Assets />} />
     <Route path="dashboard/asset-list" element={<Assets />} />
      <Route path="dashboard/asset-assignment" element={<AssetAssignment/>} />
-
-
-
+      <Route path="service-desk/asset-assignment" element={<ServiceDeskAssetAssignment />} />
 
     
 
