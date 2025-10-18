@@ -43,7 +43,7 @@ function InventoryTable({ query, filterQuery, inventoryList, selectedColumns }: 
                             <td className="table-cell">{val["asset-description"]}</td>
                             <td className="table-cell">{val["sub-category"]}</td>
                             <td className="table-cell">
-                                <Dropdown controlClassName='dropdown-cell' disabled={true} options={statusOptions} onChange={() => { }} value={val.status}></Dropdown>
+                                <Dropdown controlClassName={`status-${val.status.replace(" ", "").toLowerCase()}`} disabled={true} options={statusOptions} onChange={() => { }} value={val.status}></Dropdown>
                             </td>
                             <td className="table-cell">{val.capacity}</td>
                             <td className="table-cell">{val["capacity-unit"]}</td>

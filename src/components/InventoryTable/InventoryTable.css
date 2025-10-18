@@ -16,7 +16,17 @@ table, td, th {
     border-radius: 5px !important;
 background-color: #33ff57 !important;
 }
-
+.status-available { background: #4FC3F7 !important; }
+.status-inspection { background: #FFCA28 !important; }
+.status-onhired { background: #09EF12 !important; }
+.status-offhired { background: #B0BEC5 !important; }
+.status-ready { background: #26A69A !important; }
+.status-post { background: #FF9800 !important; }
+.status-under { background: #FFC107 !important; }
+.status-breakdown { background: #F44336 !important; }
+.status-wip { background: #F8D05A !important; }
+.status-temp { background: #00BCD4 !important; }
+.status-disposal { background: #B71C1C !important; }
 .asset-number{
     color: blue !important;
 }
