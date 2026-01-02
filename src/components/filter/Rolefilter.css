@@ -1,0 +1,27 @@
+.role-filter {
+  width: 165px;            /* ← from your Figma specs */
+}
+
+.role-filter-select {
+  width: 100%;
+  height: 41px;            /* ← from your Figma specs */
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #6b7280;          /* neutral gray text color for placeholder */
+  cursor: pointer;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+  appearance: none;        /* clean browser dropdown */
+  opacity: 1;
+}
+
+.role-filter-select:focus {
+  border-color: #2563eb;   /* blue accent border */
+}
+
+.role-filter-select option[disabled] {
+  color: #9ca3af;          /* placeholder text lighter gray */
+}

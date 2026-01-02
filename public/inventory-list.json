@@ -13,7 +13,7 @@
             "asset-number": 2893703227,
             "asset-description": "Jane Doe",
             "sub-category": "1.64m",
-            "status": "Pre-Delivery Inspection",
+            "status": "Inspection",
             "capacity": "160",
             "capacity-unit": "kw",
             "location": "Noida"
@@ -31,7 +31,7 @@
             "asset-number": 4837973278,
             "asset-description": "kira Maine",
             "sub-category": "1.69m",
-            "status": "On Hired",
+            "status": "Off Hired",
             "capacity": "5",
             "capacity-unit": "Cubic Meter",
             "location": "Delhi"
@@ -40,7 +40,7 @@
             "asset-number": 5332838292,
             "asset-description": "Sheera Maine",
             "sub-category": "1.69m",
-            "status": "On Hired",
+            "status": "Ready",
             "capacity": "5",
             "capacity-unit": "Cubic Meter",
             "location": "Delhi"
@@ -49,7 +49,7 @@
             "asset-number": 6983723927,
             "asset-description": "Sheera Maine",
             "sub-category": "1.69m",
-            "status": "On Hired",
+            "status": "Post",
             "capacity": "5",
             "capacity-unit": "Cubic Meter",
             "location": "Delhi"
@@ -58,7 +58,7 @@
             "asset-number": 7938238328,
             "asset-description": "Sheera Maine",
             "sub-category": "1.69m",
-            "status": "On Hired",
+            "status": "Under",
             "capacity": "5",
             "capacity-unit": "Cubic Meter",
             "location": "Delhi"

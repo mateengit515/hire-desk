@@ -1,0 +1,34 @@
+.status-dropdown {
+  width: 140px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 🟡 In Progress */
+.status-dropdown.in-progress {
+ 
+  background-color: #ffae00;
+}
+
+/* ✅ Completed */
+.status-dropdown.completed {
+  
+  background-color: #009649;
+}
+
+/* 🔴 Delayed */
+.status-dropdown.delayed {
+  background-color: #f44336;
+}
+
+/* Hover effect for better UX */
+.status-dropdown:hover {
+  opacity: 0.9;
+}
