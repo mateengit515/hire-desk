@@ -9,6 +9,7 @@ import ServiceDeskAssetAssignment from "./components/AssetAssignment/AssetAssign
 
 
 
+
 const AppRoutes = [
   <Route path="/" element={<HDCDepots />} key="root" />,
   <Route path="/delhi" element={<HyderabadDepot />} key="delhi" />,
